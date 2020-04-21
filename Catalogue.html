@@ -1,295 +1,367 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title></title>
-    </head>
 
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 0.8fr));
-            grid-gap: 6px;
-        }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
-        .card {
-            border: 1px double #f7a96088;
-            border-radius: 0.25rem;
-            background-color: transparent;
-        }
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-        .bg-img {
-            padding: 20px;
-            padding-bottom: 2px;
-        }
-        .container{
-           margin: 10px,10px,10px,10px;
-        }
+<style>
+    .body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 0.8fr));
+        grid-gap: 2px;
+        align-content: center;
+    }
 
-        .content {
-            padding: 15px;
-            padding-top: 0px;
-            
-        }
-        h4{
-            color: #e67e22;
-            font-size: larger;
-        }
+    .card {
+        border: 1px double rgba(241, 207, 143, 0.87);
+        border-radius: 0.25rem;
+        background-color: transparent;
+    }
 
-        button {
-            background-color: transparent;
-            border: 1px solid #2196f3;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            border-radius: 0.25rem;
-        }
-    </style>
+    .bg-img {
+        padding: 20px;
+        padding-bottom: 2px;
+    }
 
-    <body>
+    .container1 {
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .content {
+        padding: 15px;
+        margin: 5px;
+
+
+    }
+
+    h4 {
+        color: #e67e22;
+        font-size: larger;
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px solid #2196f3;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+    }
+</style>
+
+<body>
+
+    
+    <div class="container1">
+        <h2>Hello learner</h2>
         <div class="container">
-         <h2>Welcome ...</h2>
+        <ul style="list-style-type:none;">
+            <li><a href="#Videos">Video courses</a></li>
+            <li><a href="#books">Book courses</a></li>
+        </ul>
+    </div>
+    
 
-            <div class="grid-container">
+        <h4 style="color: black;font:  sans-serif;margin: 10px 10px 10px 10px;;margin-left: 20px;">Video Courses :</h4>
+        <br>
+        <div class="grid-container" >
+            
+            <div class="card" id="Videos">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/RBSGKlAvoiM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Data Structrtes and Algorithms in C++</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/RBSGKlAvoiM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Data Structrtes and Algorithms</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/PkZNo7MFNFg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn javascript</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/PkZNo7MFNFg" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn javascript</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/b-0HekkbdJM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn Photoshop</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/b-0HekkbdJM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn Photoshop</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/rfscVS0vtbw"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn Python</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn Python</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/A2t-yhFaUC0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn Marketing</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/A2t-yhFaUC0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn Marketing</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/seP6Yqx4BaY"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn Video Editing</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/seP6Yqx4BaY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn Video Editing</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/pQN-pnXPaVg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn HTMl</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn HTMl</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/ieTHC78giGQ"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>learn CSS</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/ieTHC78giGQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>learn CSS</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/OYRkIGaP80M"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>Learn SEO </h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/OYRkIGaP80M" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>Learn SEO </h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="card">
                 <div class="card">
-                    <div class="card">
-                        <div class="bg-img">
-                            <iframe
-                                width="336"
-                                height="189"
-                                src="https://www.youtube.com/embed/_V8eKsto3Ug"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="content">
-                            <h4>learn R language</h4>
-                            <p>
-                                Some quick example text to build on the card
-                                title and make up the bulk of the card's
-                                content.
-                            </p>
-                            <button>Readmore</button>
-                        </div>
+                    <div class="bg-img">
+                        <iframe width="336" height="189" src="https://www.youtube.com/embed/_V8eKsto3Ug" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <h4>learn R language</h4>
+                        <p>
+                            Todo is  add the description of the respecticve courses and their details whenver it is added to website
+                        </p>
+                        <button>Readmore</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!DOCTYPE html>
-    </body>
+   
+        <br/>
+        <br/>
+
+
+    <h4 style="color: black;font:  sans-serif;margin: 10px;;margin-left: 20px;">Book Courses :</h4><br>
+    <div class="grid-container" id="books">
+        
+        <div class="card">
+            <div class="card">
+
+                <div class="content">
+                    
+                    <h4>Data Structrtes and Algorithms</h4>
+                    <p>
+                        Great book for the competitive programmers to begin the competitve programming journey
+
+                    </p>
+                    <a href="https://cses.fi/book.pdf">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card">
+
+                <div class="content">
+                    
+                    <h4>Data Structrtes and Algorithms</h4>
+                    <p>
+                        Great book for the competitive programmers to begin the competitve programming journey
+
+                    </p>
+                    <a href="https://cses.fi/book.pdf">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card">
+
+                <div class="content">
+                    
+                    <h4>Data Structrtes and Algorithms</h4>
+                    <p>
+                        Great book for the competitive programmers to begin the competitve programming journey
+
+                    </p>
+                    <a href="https://cses.fi/book.pdf">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card">
+
+                <div class="content">
+                    
+                    <h4>Data Structrtes and Algorithms</h4>
+                    <p>
+                        Great book for the competitive programmers to begin the competitve programming journey
+
+                    </p>
+                    <a href="https://cses.fi/book.pdf">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card">
+
+                <div class="content">
+                    
+                    <h4>Data Structrtes and Algorithms</h4>
+                    <p>
+                        Great book for the competitive programmers to begin the competitve programming journey
+
+                    </p>
+                    <a href="https://cses.fi/book.pdf">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card">
+
+                <div class="content">
+                    
+                    <h4>Data Structrtes and Algorithms</h4>
+                    <p>
+                        Great book for the competitive programmers to begin the competitve programming journey
+
+                    </p>
+                    <a href="https://cses.fi/book.pdf">Download</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
